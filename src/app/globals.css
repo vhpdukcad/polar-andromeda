@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@layer base {
+  body {
+    /* bg-zinc-950 is now recognized because @import "tailwindcss" loads the theme */
+    @apply bg-zinc-950 text-zinc-100 font-sans;
+    background-image: radial-gradient(circle at 50% 0%, #2a1b3d 0%, #09090b 100%);
+  }
+}
+
+.glass-panel {
+  @apply bg-zinc-900/60 backdrop-blur-xl border border-white/10 shadow-2xl;
+}
